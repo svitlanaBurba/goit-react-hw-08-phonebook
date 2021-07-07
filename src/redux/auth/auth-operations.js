@@ -1,5 +1,5 @@
 import axios from 'axios';
-import authActions from './auth-actions';
+import {authActions} from './auth-actions';
 
 axios.defaults.baseURL = 'https://connections-api.herokuapp.com';
 
@@ -72,4 +72,4 @@ const getCurrentUser = () => async (dispatch, getState) => {
   }
 };
 
-export default {register, logIn, logOut, getCurrentUser};
+export const authOperations = {register, logIn, logOut, getCurrentUser};

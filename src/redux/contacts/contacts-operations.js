@@ -40,4 +40,4 @@ export const deleteContact = id => dispatch => {
     .catch(error => dispatch(deleteError(error.message)));
 };
 
-export default {addNewContact, deleteContact};
+//export default {addNewContact, deleteContact};
